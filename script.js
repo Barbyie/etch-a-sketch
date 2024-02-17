@@ -11,5 +11,6 @@ for (let i = 0; i <= (row * column); i++) {
   let innerContainer = document.createElement('div');
   innerContainer.style.height = '15px';
   innerContainer.style.width = '15px';
+  innerContainer.style.flexGrow = '1';
   outerContainer.appendChild(innerContainer);
 };
