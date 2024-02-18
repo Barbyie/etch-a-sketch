@@ -10,9 +10,17 @@ outerContainer.style.height = `${height}px`;
 
 for (let i = 1; i <= (row * column); i++) {
   let innerContainer = document.createElement('div');
+  innerContainer.classList.add('insideDiv');
   innerContainer.style.height = `${height / row}px`;
   innerContainer.style.width = `${width / column}px`;
   innerContainer.style.flexWrap = 'wrap';
   outerContainer.appendChild(innerContainer);
-  console.log(i);
+};
+
+let changeColor = document.querySelectorAll('.insideDiv');
+console.log(changeColor.length);
+for (let i = 0 ; i < changeColor.length; i++) {
+  changeColor[i].addEventListener('mouseover', () => {
+    changeColor[i].style.backgroundColor = 'black';
+  });
 };
