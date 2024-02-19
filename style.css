@@ -9,6 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .container {
@@ -17,6 +18,10 @@ body {
   flex-direction: column;
   box-sizing: content-box;
   border: 1px solid black;
+}
+
+.promptButton {
+  margin: 50px;
 }
 
 
