@@ -4,10 +4,11 @@ const width = 600;
 
 let button = document.querySelector('.promptButton');
 button.addEventListener('click', () => {
-  if (gridSize() > 100 || gridSize() <= 0) {
+  let sizeVariable = gridSize();
+  if (sizeVariable > 100 || sizeVariable <= 0) {
     alert("Invalid input, please type a size between 1 and 100");
   } else {
-    createGrid(gridSize());
+    createGrid(sizeVariable);
     console.log("buttonclick");
     colorGrid();
   }; 
